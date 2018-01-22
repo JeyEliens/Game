@@ -18,6 +18,40 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\Ability.h" />
+    <ClInclude Include="..\..\inc\ActiveAbility.h" />
+    <ClInclude Include="..\..\inc\Building.h" />
+    <ClInclude Include="..\..\inc\BuildingInfo.h" />
+    <ClInclude Include="..\..\inc\Cell.h" />
+    <ClInclude Include="..\..\inc\DLL.h" />
+    <ClInclude Include="..\..\inc\Field.h" />
+    <ClInclude Include="..\..\inc\Game.h" />
+    <ClInclude Include="..\..\inc\IController.h" />
+    <ClInclude Include="..\..\inc\Object.h" />
+    <ClInclude Include="..\..\inc\PassiveAbility.h" />
+    <ClInclude Include="..\..\inc\Player.h" />
+    <ClInclude Include="..\..\inc\Spell.h" />
+    <ClInclude Include="..\..\inc\Unit.h" />
+    <ClInclude Include="..\..\inc\UnitInfo.h" />
+    <ClInclude Include="..\..\inc\UnitParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Ability.cpp" />
+    <ClCompile Include="..\..\src\ActiveAbility.cpp" />
+    <ClCompile Include="..\..\src\Building.cpp" />
+    <ClCompile Include="..\..\src\BuildngInfo.cpp" />
+    <ClCompile Include="..\..\src\Cell.cpp" />
+    <ClCompile Include="..\..\src\Field.cpp" />
+    <ClCompile Include="..\..\src\Game.cpp" />
+    <ClCompile Include="..\..\src\Object.cpp" />
+    <ClCompile Include="..\..\src\PassiveAbility.cpp" />
+    <ClCompile Include="..\..\src\Player.cpp" />
+    <ClCompile Include="..\..\src\Spell.cpp" />
+    <ClCompile Include="..\..\src\Unit.cpp" />
+    <ClCompile Include="..\..\src\UnitInfo.cpp" />
+    <ClCompile Include="..\..\src\UnitParser.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{77A71E8E-5CF2-41AE-809C-934ACFF6D239}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -39,13 +73,13 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -74,12 +108,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ModuleRoot)../build/vs14/$(Platform)/$(Configuration)/</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)/build/vs14/$(Platform)/$(Configuration)/</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -101,8 +137,9 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GAME_MODULE;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ModuleRoot)inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,8 +172,9 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GAME_MODULE;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ModuleRoot)inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,23 +183,11 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="Ability.h" />
-    <ClInclude Include="ActiveAbility.h" />
-    <ClInclude Include="Building.h" />
-    <ClInclude Include="BuildngInfo.h" />
-    <ClInclude Include="Cell.h" />
-    <ClInclude Include="Field.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="IController.h" />
-    <ClInclude Include="Object.h" />
-    <ClInclude Include="PassiveAbility.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="Spell.h" />
-    <ClInclude Include="Unit.h" />
-    <ClInclude Include="UnitInfo.h" />
-    <ClInclude Include="UnitParser.h" />
-  </ItemGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <ModuleRoot>../../</ModuleRoot>
+    <GameRoot>../../../</GameRoot>
+  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,0 +1,33 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.tlog
+*.obj
+*.db
+*.idb
+*.pdb
+*.ilk
+*.exe
+*.opendb
+*.orig
+*.user
+*.sdf
+*.stl
+*.aps
+build/*
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Xx]64/
+[Xx]86/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio cache/options directory
+.vs/
+
