@@ -81,4 +81,15 @@ int Unit::GetCurrentSpeed()
 	return currentSpeed;
 }
 
-/*set-get list*/
+void Unit::SetSpellOnUnit(Spell* spell)
+{
+	castedSpells.insert(spell);
+}
+set<Spell*> Unit::GetSpellsOnUnit()
+{
+	return castedSpells;
+}
+void  Unit::DeleteSpellFromUnit(Spell* spell)
+{
+	castedSpells.erase(spell);
+}

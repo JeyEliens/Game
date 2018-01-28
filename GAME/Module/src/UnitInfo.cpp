@@ -9,11 +9,11 @@ string UnitInfo::GetName()
 	return name;
 }
 
-void UnitInfo::SetFraction(string fraction)
+void UnitInfo::SetFraction(Fraction fraction)
 {
 	this->fraction = fraction;
 }
-string UnitInfo::GetFraction()
+UnitInfo::Fraction UnitInfo::GetFraction()
 {
 	return fraction;
 }
@@ -117,13 +117,20 @@ int UnitInfo::GetSize()
 	return size;
 }
 
-void UnitInfo::SetCategory(string category)
+void UnitInfo::SetCategory(Category category)
 {
 	this->category = category;
 }
-string UnitInfo::GetCategory()
+UnitInfo::Category UnitInfo::GetCategory()
 {
 	return category;
 }
 
-/*set-get of list*/
+void UnitInfo::SetAbility(Ability* ability)
+{
+	thisAbilities.insert(ability);
+}
+set<Ability*> UnitInfo::GetAbilities()
+{
+	return thisAbilities;
+}

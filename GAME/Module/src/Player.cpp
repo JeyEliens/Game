@@ -37,10 +37,55 @@ int Player::GetResourcesDecrease(int i)
 	return resourcesDecrease[i];
 }
 
-/*set-get for lists*/
-
-Unit* Player::SetUnits(list<Unit*> units)
+void Player::AddUnit(Unit* unit)
 {
-	for (list<Unit*>::iterator it = units.begin(); it != units.end(); it++)
-		this->units.push_back(*it);
+	this->units.insert(unit);
+}
+set<Unit*> Player::GetUnits()
+{
+	return units;
+}
+void Player::DeleteUnit(Unit* unit)
+{
+	units.erase(unit);
+}
+
+void Player::AddBuilding(Building* building)
+{
+	this->buildings.insert(building);
+}
+set<Building*> Player::GetBuildings()
+{
+	return buildings;
+}
+void Player::DeleteBuilding(Building* building)
+{
+	buildings.erase(building);
+}
+
+void Player::AddBuildingToLibrary(Building* buildingToLibrary)
+{
+	this->buildingLibrary.insert(buildingToLibrary);
+}
+set<Building*> Player::GetBuildingsFromLibrary()
+{
+	return buildingLibrary;
+}
+
+void Player::AddUnitToLibrary(Unit* unitInLibrary)
+{
+	this->unitsLibrary.insert(unitInLibrary);
+}
+set<Unit*> Player::GetUnitsFromLibrary()
+{
+	return unitsLibrary;
+}
+
+void Player::AddSpellToLibrary(Spell* spellToLibrary)
+{
+	this->spellsLibrary.insert(spellToLibrary);
+}
+set<Spell*> Player::GetSpellsFromLibrary()
+{
+	return spellsLibrary;
 }

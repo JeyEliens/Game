@@ -1,6 +1,6 @@
 #include "DLL.h"
 #include <string>
-#include <list>
+#include <set>
 using namespace std;
 
 class Unit;
@@ -36,8 +36,22 @@ public:
 	void SetResourcesDecrease(int resourceDecrease, int i) {}
 	int GetResourcesDecrease(int i) {}
 
-	/*set-get for lists*/
-	Unit* SetUnits(list<Unit*> units) {}
+	void AddUnit(Unit* unit) {}
+	set<Unit*> GetUnits() {}
+	void DeleteUnit(Unit* unit) {}
+
+	void AddBuilding(Building* building) {}
+	set<Building*> GetBuildings() {}
+	void DeleteBuilding(Building* building) {}
+
+	void AddBuildingToLibrary(Building* buildingInLibrary) {}
+	set<Building*> GetBuildingsFromLibrary() {}
+
+	void AddUnitToLibrary(Unit* unitInLibrary) {}
+	set<Unit*> GetUnitsFromLibrary() {}
+
+	void AddSpellToLibrary(Spell* spellToLibrary) {}
+	set<Spell*> GetSpellsFromLibrary() {}
 
 private:
 	string			name;
@@ -46,9 +60,9 @@ private:
 	int				resourcesIncrease[7];
 	int				resourcesDecrease[7];
 
-	list<Unit*>		units;
-	list<Building*>	buildings;
-	list<Building*>	buildingLibrary;
-	list<Unit*>		unitsLibrary;
-	list<Spell*>	spellsLibrary;
+	set<Unit*>		units;
+	set<Building*>	buildings;
+	set<Building*>	buildingLibrary;
+	set<Unit*>		unitsLibrary;
+	set<Spell*>	spellsLibrary;
 };

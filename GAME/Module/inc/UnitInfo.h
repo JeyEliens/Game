@@ -1,6 +1,6 @@
 #include "DLL.h"
 #include <string>
-#include <list>
+#include <set>
 using namespace std;
 
 class Ability;
@@ -8,14 +8,29 @@ class Ability;
 class DLL_EXPORT UnitInfo
 {
 public:
+	enum Fraction
+	{
+		eHeaven = 0,
+		eBattleInstitution = 1,
+		eMountains = 2,
+		eForest = 3,
+		eCave = 4,
+		eTundra = 5,
+		eDesert = 6,
+		eSea = 7,
+		eUndead = 8,
+		eHell = 9
+	};
+
+	enum Category {}; //i don't know wich categories there must be
 	UnitInfo() {}
-	UnitInfo(string name, string fraction, int cost, int healthPoint, int damage, string damageType, int attackRange, int armor, string armorType, int accuracy, int agility, int speed, int size, string category, list<Ability*> thisAbility) {}
+	UnitInfo(string name, Fraction fraction, int cost, int healthPoint, int damage, string damageType, int attackRange, int armor, string armorType, int accuracy, int agility, int speed, int size, Category category, list<Ability*> thisAbility) {}
 
 	void SetName(string name) {}
 	string GetName() {}
 
-	void SetFraction(string fraction) {}
-	string GetFraction() {}
+	void SetFraction(Fraction fraction) {}
+	Fraction GetFraction() {}
 
 	void SetCost(int cost) {}
 	int GetCost() {}
@@ -50,13 +65,14 @@ public:
 	void SetSize(int size) {}
 	int GetSize() {}
 
-	void SetCategory(string category) {}
-	string GetCategory() {}
+	void SetCategory(Category category) {}
+	Category GetCategory() {}
 
-	/*set-get of list*/
+	void SetAbility(Ability* ability) {}
+	set<Ability*> GetAbilities() {}
 private:
 	string			name;
-	string			fraction;
+	Fraction		fraction;
 	int				cost;
 	int				healthPoint;
 	int				damage;
@@ -68,6 +84,6 @@ private:
 	int				agility;
 	int				speed;
 	int				size;
-	string			category; //category means class(mag, warior, etc) cause word "class" is reserved
-	list<Ability*>	thisAbility;
+	Category		category; //category means class(mag, warior, etc) cause word "class" is reserved
+	set<Ability*>	thisAbilities;
 };

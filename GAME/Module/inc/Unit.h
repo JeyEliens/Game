@@ -1,5 +1,5 @@
 #include <string>
-#include <list>
+#include <set>
 #include "Spell.h"
 #include "Object.h"
 #include "UnitInfo.h"
@@ -40,7 +40,9 @@ public:
 	void SetCurrentSpeed(int currentSpeed) {}
 	int GetCurrentSpeed() {}
 
-	/*set-get list*/
+	void SetSpellOnUnit(Spell* spell) {}
+	set<Spell*> GetSpellsOnUnit() {}
+	void DeleteSpellFromUnit(Spell* spell) {}
 private:
 	UnitInfo*		thisUnitInfo;
 	int				movePoints;
@@ -51,5 +53,5 @@ private:
 	int				currentAccuracy;
 	int				currentAgility;
 	int				currentSpeed;
-	list<Spell*>	castedSpells;
+	set<Spell*>	castedSpells;
 };
