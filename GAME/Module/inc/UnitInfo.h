@@ -22,54 +22,58 @@ public:
 		eHell = 9
 	};
 
-	enum Category {}; //i don't know wich categories there must be
+	enum Category
+	{
+		eGargoyle = 0
+	}; //i don't know wich categories there must be
+
 	UnitInfo() {}
-	UnitInfo(string name, Fraction fraction, int cost, int healthPoint, int damage, string damageType, int attackRange, int armor, string armorType, int accuracy, int agility, int speed, int size, Category category, list<Ability*> thisAbility) {}
+	UnitInfo(string name, Fraction fraction, int cost, int healthPoint, int damage, string damageType, int attackRange, int armor, string armorType, int accuracy, int agility, int speed, int size, Category category, set<Ability*> thisAbility) {}
 
-	void SetName(string name) {}
-	string GetName() {}
+	void SetName(string name);
+	string GetName();
 
-	void SetFraction(Fraction fraction) {}
-	Fraction GetFraction() {}
+	void SetFraction(Fraction fraction);
+	Fraction GetFraction();
 
-	void SetCost(int cost) {}
-	int GetCost() {}
+	void SetCost(int cost);
+	int GetCost();
 
-	void SetHealthPoint(int healthPoint) {}
-	int GetHealthPoint() {}
+	void SetHealthPoint(int healthPoint);
+	int GetHealthPoint();
 
-	void SetDamage(int damage) {}
-	int GetDamage() {}
+	void SetDamage(int damage);
+	int GetDamage();
 
-	void SetDamageType(string damageType) {}
-	string GetDamageType() {}
+	void SetDamageType(string damageType);
+	string GetDamageType();
 
-	void SetAttackRange(int attackRange) {}
-	int GetAttackRange() {}
+	void SetAttackRange(int attackRange);
+	int GetAttackRange();
 
-	void SetArmor(int armor) {}
-	int GetArmor() {}
+	void SetArmor(int armor);
+	int GetArmor();
 
-	void SetArmorType(string armorType) {}
-	string GetArmorType() {}
+	void SetArmorType(string armorType);
+	string GetArmorType();
 
-	void SetAccuracy(int accuracy) {}
-	int GetAccuracy() {}
+	void SetAccuracy(int accuracy);
+	int GetAccuracy();
 
-	void SetAgility(int agility) {}
-	int GetAgility() {}
+	void SetAgility(int agility);
+	int GetAgility();
 
-	void SetSpeed(int speed) {}
-	int GetSpeed() {}
+	void SetSpeed(int speed);
+	int GetSpeed();
 
-	void SetSize(int size) {}
-	int GetSize() {}
+	void SetSize(int size);
+	int GetSize();
 
-	void SetCategory(Category category) {}
-	Category GetCategory() {}
+	void SetCategory(Category category);
+	Category GetCategory();
 
-	void SetAbility(Ability* ability) {}
-	set<Ability*> GetAbilities() {}
+	void SetAbility(Ability* ability);
+	set<Ability*> GetAbilities();
 private:
 	string			name;
 	Fraction		fraction;

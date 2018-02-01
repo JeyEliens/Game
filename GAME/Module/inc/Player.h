@@ -22,36 +22,36 @@ public:
 	};
 
 	Player() {}
-	Player(string name, ResourceName thisResourceName, int resourses[], int resoursesIncrease[], int resoursesDecrease[], list<Unit*> units, list<Building*> buildings, list<Building*>	buildingLibrary, list<Unit*> unitsLibrary, list<Spell*>	spellsLibrary) {}
+	Player(string name, ResourceName thisResourceName, int resourses[], int resoursesIncrease[], int resoursesDecrease[], set<Unit*> units, set<Building*> buildings, set<Building*>	buildingLibrary, set<Unit*> unitsLibrary, set<Spell*>	spellsLibrary) {}
 
-	void SetName(string name) {}
-	string GetName() {}
+	void SetName(string name);
+	string GetName();
 
-	void SetResource(int resources[], int i) {}
-	int GetResourse(int i) {}
+	void SetResource(int resources[], int i);
+	int GetResourse(int i);
 
-	void SetResourcesIncrease(int resourceIncrease, int i) {}
-	int GetResourcesIncrease(int i) {}
+	void SetResourcesIncrease(int resourceIncrease, int i);
+	int GetResourcesIncrease(int i);
 
-	void SetResourcesDecrease(int resourceDecrease, int i) {}
-	int GetResourcesDecrease(int i) {}
+	void SetResourcesDecrease(int resourceDecrease, int i);
+	int GetResourcesDecrease(int i);
 
-	void AddUnit(Unit* unit) {}
-	set<Unit*> GetUnits() {}
-	void DeleteUnit(Unit* unit) {}
+	void AddUnit(Unit* unit);
+	set<Unit*> GetUnits();
+	void DeleteUnit(Unit* unit);
 
-	void AddBuilding(Building* building) {}
-	set<Building*> GetBuildings() {}
-	void DeleteBuilding(Building* building) {}
+	void AddBuilding(Building* building);
+	set<Building*> GetBuildings();
+	void DeleteBuilding(Building* building);
 
-	void AddBuildingToLibrary(Building* buildingInLibrary) {}
-	set<Building*> GetBuildingsFromLibrary() {}
+	void AddBuildingToLibrary(Building* buildingInLibrary);
+	set<Building*> GetBuildingsFromLibrary();
 
-	void AddUnitToLibrary(Unit* unitInLibrary) {}
-	set<Unit*> GetUnitsFromLibrary() {}
+	void AddUnitToLibrary(Unit* unitInLibrary);
+	set<Unit*> GetUnitsFromLibrary();
 
-	void AddSpellToLibrary(Spell* spellToLibrary) {}
-	set<Spell*> GetSpellsFromLibrary() {}
+	void AddSpellToLibrary(Spell* spellToLibrary);
+	set<Spell*> GetSpellsFromLibrary();
 
 private:
 	string			name;

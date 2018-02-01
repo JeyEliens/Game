@@ -1,5 +1,3 @@
 #include "DLL.h"
 
-class DLL_EXPORT Game 
-{
-};
+class DLL_EXPORT Game {};

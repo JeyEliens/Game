@@ -11,23 +11,23 @@ public:
 	Building() {};
 	Building(BuildingInfo* thisBuildingInfo, int currentHealthPoints, int currentDamage, int currentAttackRange, int currentAccuracy, int currentArmor) {};
 
-	void SetThisBuildingInfo(BuildingInfo* buildingInfo) {}
-	BuildingInfo* GetThisBuildingInfo() {}
+	void SetThisBuildingInfo(BuildingInfo* buildingInfo);
+	BuildingInfo* GetThisBuildingInfo();
 
-	void SetCurrentHealthPoints(int currentHealthPoints) {}
-	int GetCurrentHealthPoints() {}
+	void SetCurrentHealthPoints(int currentHealthPoints);
+	int GetCurrentHealthPoints();
 
-	void SetCurrentDamage(int currentDamage) {}
-	int GetCurrentHealthPoints() {}
+	void SetCurrentDamage(int currentDamage);
+	int GetCurrentDamage();
 
-	void SetCurrentAttackRange(int currentAttackRange) {}
-	int GetCurrentAttackRange() {}
+	void SetCurrentAttackRange(int currentAttackRange);
+	int GetCurrentAttackRange();
 
-	void SetCurrentAccuracy(int currentAccuracy) {}
-	int GetCurrentAccuracy() {}
+	void SetCurrentAccuracy(int currentAccuracy);
+	int GetCurrentAccuracy();
 
-	void SetCurrentArmor(int currentArmor) {}
-	int GetCurrentArmor() {}
+	void SetCurrentArmor(int currentArmor);
+	int GetCurrentArmor();
 private:
 	BuildingInfo*	buildingInfo;
 	int				currentHealthPoints;

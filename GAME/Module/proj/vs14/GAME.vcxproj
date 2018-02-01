@@ -52,6 +52,9 @@
     <ClCompile Include="..\..\src\UnitInfo.cpp" />
     <ClCompile Include="..\..\src\UnitParser.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="unit1.ini" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{77A71E8E-5CF2-41AE-809C-934ACFF6D239}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>

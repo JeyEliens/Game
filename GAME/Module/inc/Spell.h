@@ -1,5 +1,3 @@
 #include "DLL.h"
 
-class DLL_EXPORT Spell 
-{
-};
+class DLL_EXPORT Spell {};

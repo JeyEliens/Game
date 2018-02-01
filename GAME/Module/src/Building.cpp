@@ -22,7 +22,7 @@ void Building::SetCurrentDamage(int currentDamage)
 {
 	this->currentDamage = currentDamage;
 }
-int Building::GetCurrentHealthPoints()
+int Building::GetCurrentDamage()
 {
 	return currentDamage;
 }
