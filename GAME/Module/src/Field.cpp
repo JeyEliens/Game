@@ -9,20 +9,20 @@ int Field::GetWaterAmount()
 	return waterAmount;
 }
 
-void Field::SetTemperatureType(string temperatureType)
+void Field::SetTemperatureType(TemperatureType temperatureType)
 {
 	this->temperatureType = temperatureType;
 }
-string Field::GetTemperatureType()
+TemperatureType Field::GetTemperatureType()
 {
 	return temperatureType;
 }
 
-void Field::SetHumidityType(string humidityType)
+void Field::SetHumidityType(HumidityType humidityType)
 {
 	this->humidityType = humidityType;
 }
-string Field::GetHumidityType()
+HumidityType Field::GetHumidityType()
 {
 	return humidityType;
 }

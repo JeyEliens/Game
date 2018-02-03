@@ -93,3 +93,9 @@ void  Unit::DeleteSpellFromUnit(Spell* spell)
 {
 	castedSpells.erase(spell);
 }
+
+
+ObjectType Unit::GetType()
+{
+	return eUnit;
+}

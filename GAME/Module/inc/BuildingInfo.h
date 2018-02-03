@@ -1,12 +1,13 @@
 #include <string>
 #include "Ability.h"
+#include "Enums/ArmorType.h"
+#include "Enums/DamageType.h"
 using namespace std;
 
 class DLL_EXPORT BuildingInfo
 {
 public:
 	BuildingInfo() {}
-	BuildingInfo(string	name, string fraction,int cost, int	healthPoints, int damage, string damageType, int attackRange, int accuracy, int	armor, string armorType, int size, int fieldSize) {}
 	
 	void SetName(string name);
 	string GetName();
@@ -23,8 +24,8 @@ public:
 	void SetDamage(int damage);
 	int GetDamage();
 
-	void SetDamageType(string damageType);
-	string GetDamageType();
+	void SetDamageType(DamageType damageType);
+	DamageType GetDamageType();
 
 	void SetAttackRange(int attackRange);
 	int GetAttackRange();
@@ -35,8 +36,8 @@ public:
 	void SetArmor(int armor);
 	int GetArmor();
 
-	void SetArmorType(string armorType);
-	string GetArmorType();
+	void SetArmorType(ArmorType armorType);
+	ArmorType GetArmorType();
 
 	void SetSize(int size);
 	int GetSize();
@@ -49,11 +50,11 @@ private:
 	int			cost;
 	int			healthPoints;
 	int			damage;
-	string		damageType;
+	DamageType	damageType;
 	int			attackRange;
 	int			accuracy;
 	int			armor;
-	string		armorType;
+	ArmorType	armorType;
 	int			size;
 	int			fieldSize;
 };

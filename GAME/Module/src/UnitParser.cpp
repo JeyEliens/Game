@@ -1,8 +1,8 @@
 #include"UnitParser.h"
 #include<sstream>
 #include<vector>
-
-void UnitParser::ReadUnitInfo(/*place of folder*/ set<Unit*> allUnits)
+/*
+void UnitParser::ReadUnitInfo(place of folder set<Unit*> allUnits)
 {
 	ifstream in("unit1.ini");
 
@@ -84,4 +84,4 @@ vector<string> UnitParser::split(const string& s, char delimiter)
 	while (getline(tokenStream, token, delimiter))
 		tokens.push_back(token);
 	return tokens;
-}
+}*/

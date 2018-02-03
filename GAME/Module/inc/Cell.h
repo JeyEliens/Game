@@ -1,29 +1,30 @@
 #include "DLL.h"
 #include <string>
-#include "Object.h"
-#include "Spell.h"
+#include "Enums/LandType.h"
 using namespace std;
+
+class Object;
+class Spell;
 
 class DLL_EXPORT Cell
 {
 public:
-	Cell() {}
-	Cell(string landType, char visibility, Object myObject, Spell spell) {}
+	Cell(LandType landType) {}
 
-	void SetLandType(string landType);
-	string GetLandType();
+	void SetLandType(LandType landType);
+	LandType GetLandType();
 
 	void SetVisibility(char visibility);
 	char GetVisibility();
 
-	void SetMyObject(Object myObject);
-	Object GetMyObject();
+	void SetMyObject(Object* myObject);
+	Object* GetMyObject();
 
-	void SetSpell(Spell spell);
-	Spell GetSpell();
+	void SetSpell(Spell* spell);
+	Spell* GetSpell();
 private:
-	string		landType;
+	LandType		landType;
 	char		visibility;
-	Object		myObject;
-	Spell		spell;
+	Object*		myObject;
+	Spell*		spell;
 };

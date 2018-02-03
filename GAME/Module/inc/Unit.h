@@ -6,12 +6,13 @@
 using namespace std;
 
 class UnitInfo;
+class Player;
+class Cell;
 
 class DLL_EXPORT Unit : public Object
 {
 public:
-	Unit() {}
-	Unit(UnitInfo* thisUnitInfo, int movePoints, int currentHealthPoints, int currentDamage, int currentAttackRange, int currentArmor, int currentAccuracy, int currentAgility, int currentSpeed, set<Spell*> castedSpells) {}
+	Unit(UnitInfo* thisUnitInfo, Cell* position) {}
 
 	void SetUnitInfo(UnitInfo* thisUnitInfo);
 	UnitInfo* GetUnitInfo();
@@ -43,6 +44,8 @@ public:
 	void SetSpellOnUnit(Spell* spell);
 	set<Spell*> GetSpellsOnUnit();
 	void DeleteSpellFromUnit(Spell* spell);
+
+	ObjectType GetType() override;
 private:
 	UnitInfo*		thisUnitInfo;
 	int				movePoints;
@@ -53,5 +56,8 @@ private:
 	int				currentAccuracy;
 	int				currentAgility;
 	int				currentSpeed;
-	set<Spell*>	castedSpells;
+	set<Spell*>		castedSpells;
+
+	Cell*			currentPosition;
+	Player*			parent;
 };

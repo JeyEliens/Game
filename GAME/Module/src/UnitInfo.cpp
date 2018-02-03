@@ -1,6 +1,6 @@
 #include "UnitInfo.h"
 
-void UnitInfo::SetName(string name)
+void UnitInfo::SetName(const string& name)
 {
 	this->name = name;
 }
@@ -45,11 +45,11 @@ int UnitInfo::GetDamage()
 	return damage;
 }
 
-void UnitInfo::SetDamageType(string damageType)
+void UnitInfo::SetDamageType(DamageType damageType)
 {
 	this->damageType = damageType;
 }
-string UnitInfo::GetDamageType()
+DamageType UnitInfo::GetDamageType()
 {
 	return damageType;
 }
@@ -72,11 +72,11 @@ int UnitInfo::GetArmor()
 	return armor;
 }
 
-void UnitInfo::SetArmorType(string armorType)
+void UnitInfo::SetArmorType(ArmorType armorType)
 {
 	this->armorType = armorType;
 }
-string UnitInfo::GetArmorType()
+ArmorType UnitInfo::GetArmorType()
 {
 	return armorType;
 }
@@ -126,7 +126,7 @@ UnitInfo::Category UnitInfo::GetCategory()
 	return category;
 }
 
-void UnitInfo::SetAbility(Ability* ability)
+void UnitInfo::AddAbility(Ability* ability)
 {
 	thisAbilities.insert(ability);
 }

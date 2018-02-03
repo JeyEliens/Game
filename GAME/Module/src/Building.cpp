@@ -53,3 +53,8 @@ int Building::GetCurrentArmor()
 {
 	return currentArmor;
 }
+
+ObjectType Building::GetType()
+{
+	return eBuilding;
+}

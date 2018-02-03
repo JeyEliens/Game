@@ -1,10 +1,10 @@
 #include "Cell.h"
 
-void Cell::SetLandType(string landType)
+void Cell::SetLandType(LandType landType)
 {
 	this->landType = landType;
 }
-string Cell::GetLandType()
+LandType Cell::GetLandType()
 {
 	return landType;
 }
@@ -18,20 +18,20 @@ char Cell::GetVisibility()
 	return visibility;
 }
 
-void Cell::SetMyObject(Object myObject)
+void Cell::SetMyObject(Object* myObject)
 {
 	this->myObject = myObject;
 }
-Object Cell::GetMyObject()
+Object* Cell::GetMyObject()
 {
 	return myObject;
 }
 
-void Cell::SetSpell(Spell spell)
+void Cell::SetSpell(Spell* spell)
 {
 	this->spell = spell;
 }
-Spell Cell::GetSpell()
+Spell* Cell::GetSpell()
 {
 	return spell;
 }

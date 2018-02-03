@@ -1,3 +1,15 @@
 #include "DLL.h"
 
-class DLL_EXPORT Object {};
+enum ObjectType
+{
+	eUnit,
+	eBuilding
+};
+
+class DLL_EXPORT Object 
+{
+public:
+	Object() {}
+
+	virtual ObjectType GetType() = 0;
+};

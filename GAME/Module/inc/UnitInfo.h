@@ -1,6 +1,8 @@
 #include "DLL.h"
 #include <string>
 #include <set>
+#include "Enums\ArmorType.h"
+#include "Enums\DamageType.h"
 using namespace std;
 
 class Ability;
@@ -27,10 +29,9 @@ public:
 		eGargoyle = 0
 	}; //i don't know wich categories there must be
 
-	UnitInfo() {}
-	UnitInfo(string name, Fraction fraction, int cost, int healthPoint, int damage, string damageType, int attackRange, int armor, string armorType, int accuracy, int agility, int speed, int size, Category category, set<Ability*> thisAbility) {}
+	UnitInfo(const string& name) {}
 
-	void SetName(string name);
+	void SetName(const string& name);
 	string GetName();
 
 	void SetFraction(Fraction fraction);
@@ -45,8 +46,8 @@ public:
 	void SetDamage(int damage);
 	int GetDamage();
 
-	void SetDamageType(string damageType);
-	string GetDamageType();
+	void SetDamageType(DamageType damageType);
+	DamageType GetDamageType();
 
 	void SetAttackRange(int attackRange);
 	int GetAttackRange();
@@ -54,8 +55,8 @@ public:
 	void SetArmor(int armor);
 	int GetArmor();
 
-	void SetArmorType(string armorType);
-	string GetArmorType();
+	void SetArmorType(ArmorType armorType);
+	ArmorType GetArmorType();
 
 	void SetAccuracy(int accuracy);
 	int GetAccuracy();
@@ -72,7 +73,7 @@ public:
 	void SetCategory(Category category);
 	Category GetCategory();
 
-	void SetAbility(Ability* ability);
+	void AddAbility(Ability* ability);
 	set<Ability*> GetAbilities();
 private:
 	string			name;
@@ -80,10 +81,10 @@ private:
 	int				cost;
 	int				healthPoint;
 	int				damage;
-	string			damageType;
+	DamageType		damageType;
 	int				attackRange;
 	int				armor;
-	string			armorType;
+	ArmorType		armorType;
 	int				accuracy;
 	int				agility;
 	int				speed;

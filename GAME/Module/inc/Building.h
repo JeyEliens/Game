@@ -5,11 +5,14 @@
 class BuildingInfo;
 using namespace std;
 
+class Player;
+class Cell;
+
 class DLL_EXPORT Building : public Object
 {
 public:
 	Building() {};
-	Building(BuildingInfo* thisBuildingInfo, int currentHealthPoints, int currentDamage, int currentAttackRange, int currentAccuracy, int currentArmor) {};
+	Building(BuildingInfo* thisBuildingInfo) {};
 
 	void SetThisBuildingInfo(BuildingInfo* buildingInfo);
 	BuildingInfo* GetThisBuildingInfo();
@@ -28,6 +31,8 @@ public:
 
 	void SetCurrentArmor(int currentArmor);
 	int GetCurrentArmor();
+
+	ObjectType GetType() override;
 private:
 	BuildingInfo*	buildingInfo;
 	int				currentHealthPoints;
@@ -35,4 +40,7 @@ private:
 	int				currentAttackRange;
 	int				currentAccuracy;
 	int				currentArmor;
+
+	Cell*			position;
+	Player*			parent;
 };

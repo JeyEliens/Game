@@ -45,11 +45,11 @@ int BuildingInfo::GetDamage()
 	return damage;
 }
 
-void BuildingInfo::SetDamageType(string damageType)
+void BuildingInfo::SetDamageType(DamageType damageType)
 {
 	this->damageType = damageType;
 }
-string BuildingInfo::GetDamageType()
+DamageType BuildingInfo::GetDamageType()
 {
 	return damageType;
 }
@@ -81,11 +81,11 @@ int BuildingInfo::GetArmor()
 	return armor;
 }
 
-void BuildingInfo::SetArmorType(string armorType)
+void BuildingInfo::SetArmorType(ArmorType armorType)
 {
 	this->armorType = armorType;
 }
-string BuildingInfo::GetArmorType()
+ArmorType BuildingInfo::GetArmorType()
 {
 	return armorType;
 }

@@ -25,6 +25,9 @@
     <ClInclude Include="..\..\inc\BuildingInfo.h" />
     <ClInclude Include="..\..\inc\Cell.h" />
     <ClInclude Include="..\..\inc\DLL.h" />
+    <ClInclude Include="..\..\inc\Enums\ArmorType.h" />
+    <ClInclude Include="..\..\inc\Enums\DamageType.h" />
+    <ClInclude Include="..\..\inc\Enums\LandType.h" />
     <ClInclude Include="..\..\inc\Field.h" />
     <ClInclude Include="..\..\inc\Game.h" />
     <ClInclude Include="..\..\inc\IController.h" />
@@ -111,7 +114,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ModuleRoot)../build/vs14/$(Platform)/$(Configuration)/</OutDir>
+    <OutDir>../../../build/vs14/$(Platform)/$(Configuration)/</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
