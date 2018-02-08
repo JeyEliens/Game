@@ -1,0 +1,45 @@
+___________________________________________________________________________________
+
+Unit:
+
+1. Health
+2. Damage (random based, histogram)
+3. Damage Type(DT)
+4. Armor
+5. Armor Type(AT)
+6. Accuracy
+7. Agility
+8. Speed
+9. Mana*
+10. Mana regen*
+11. Special abilities
+12. Price
+
+* - optional
+___________________________________________________________________________________
+
+Damage Suffered = DS
+        	{ true, Random(10) > (Agility - Accuracy)
+DS =	{
+	{ false, else
+
+Final Damage = FD
+Random Damage = RD
+FD = RD * DACoef(DT, AT) * (1 - Armor / 22)
+
+___________________________________________________________________________________
+
+Building:
+
+1. Health
+2. Armor
+3. Armor Type(AT)
+4. Price
+5. Special Abilities
+
+___________________________________________________________________________________
+
+DS = always true
+FD = RD * DACoef(DT, AT) * (1 - Armor / 22)
+
+___________________________________________________________________________________
