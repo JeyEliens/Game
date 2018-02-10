@@ -11,8 +11,9 @@ class Unit;
 class DLL_EXPORT UnitParser
 {
 public:
-	void ReadUnitInfo(/*place of folder*/ set<Unit*> allUnits);
-	vector<string> split(const string& s, char delimiter);
+	void ReadUnitInfo(set<UnitInfo*> allUnitsInfo, set<string> namesOfFilesOfUnits);
+	set<string> ReadNamesOfFiles();
+	vector<string> Split(const string& s, char delimiter);
 private:
 	set<Unit*> allUnits;
 };

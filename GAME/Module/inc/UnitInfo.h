@@ -29,6 +29,7 @@ public:
 		eGargoyle = 0
 	}; //i don't know wich categories there must be
 
+	UnitInfo() {}
 	UnitInfo(const string& name) {}
 
 	void SetName(const string& name);

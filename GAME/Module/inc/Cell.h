@@ -23,7 +23,7 @@ public:
 	void SetSpell(Spell* spell);
 	Spell* GetSpell();
 private:
-	LandType		landType;
+	LandType	landType;
 	char		visibility;
 	Object*		myObject;
 	Spell*		spell;

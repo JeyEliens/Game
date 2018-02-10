@@ -1,5 +1,15 @@
 #include "Field.h"
 
+void Field::SetSize(int size)
+{
+	this->size = size;
+}
+
+int Field::GetSize()
+{
+	return size;
+}
+
 void Field::SetWaterAmount(int waterAmount)
 {
 	this->waterAmount = waterAmount;
