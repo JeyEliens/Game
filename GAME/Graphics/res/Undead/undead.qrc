@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/Buildings">
+        <file>cathedral_of_the_dead.jpg</file>
+        <file>cemetry.jpg</file>
+        <file>dark_towers.jpg</file>
+        <file>necropolis.jpg</file>
+        <file>portal_of_the_darkness.jpg</file>
+        <file>sacrificial_altar.jpg</file>
+        <file>temple_of_death.jpg</file>
+        <file>tower_of_the_dead.jpg</file>
+    </qresource>
+    <qresource prefix="/Units">
+        <file>black_knight.jpg</file>
+        <file>black_master.jpg</file>
+        <file>bonnie.jpg</file>
+        <file>dark_guardian.jpg</file>
+        <file>darkness_elemental.jpg</file>
+        <file>demon_of_horror.jpg</file>
+        <file>ghoul.jpg</file>
+        <file>king_undead.jpg</file>
+        <file>lich.jpg</file>
+        <file>living_dead.jpg</file>
+        <file>mummy.jpg</file>
+        <file>necromancer.jpg</file>
+        <file>revolted_colonel.jpg</file>
+        <file>revolted_from_the_tomb.jpg</file>
+        <file>skeleton_beast.jpg</file>
+        <file>skeleton_bownan.jpg</file>
+        <file>skeleton_warrior.jpg</file>
+        <file>skeleton_wizard.jpg</file>
+        <file>souls_killer.jpg</file>
+        <file>vampire.jpg</file>
+        <file>zombie.jpg</file>
+        <file>bone_monster.jpg</file>
+        <file>bone_pangolin.jpg</file>
+        <file>mummy_quuen.jpg</file>
+        <file>gravedigger.jpg</file>
+    </qresource>
+</RCC>

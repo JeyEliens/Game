@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/Buildings">
+        <file>ancient_port.jpg</file>
+        <file>dam.jpg</file>
+        <file>harbor.jpg</file>
+        <file>lighthouse.jpg</file>
+        <file>ocean_palace.jpg</file>
+        <file>sea_fortress.jpg</file>
+        <file>shrine_of_the_ocean.jpg</file>
+        <file>underwater_temple.jpg</file>
+    </qresource>
+    <qresource prefix="/Units">
+        <file>ancient_agurion.jpg</file>
+        <file>bandit.jpg</file>
+        <file>bangoise.jpg</file>
+        <file>cisphenen.jpg</file>
+        <file>diver.jpg</file>
+        <file>giant_jellyfish.jpg</file>
+        <file>giant_octopus.jpg</file>
+        <file>giant_tortoise.jpg</file>
+        <file>groom.jpg</file>
+        <file>hydra.jpg</file>
+        <file>igurion.jpg</file>
+        <file>ocean_daemon.jpg</file>
+        <file>oceanhorn.jpg</file>
+        <file>outlaw.jpg</file>
+        <file>scolopendra.jpg</file>
+        <file>sea_daemon.jpg</file>
+        <file>sea_serpent.jpg</file>
+        <file>sea_spirit.jpg</file>
+        <file>sea_warrior.jpg</file>
+        <file>underwater_clithear.jpg</file>
+        <file>underwater_executioner.jpg</file>
+        <file>water_elemental.jpg</file>
+    </qresource>
+</RCC>

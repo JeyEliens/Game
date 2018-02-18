@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/Buildings">
+        <file>abyss_monastery.jpg</file>
+        <file>crystal_mine.jpg</file>
+        <file>gem_mine.jpg</file>
+        <file>iron_mine.jpg</file>
+        <file>labyrinth.jpg</file>
+        <file>monsters_cave.jpg</file>
+        <file>secret_cave.jpg</file>
+        <file>underground_town.jpg</file>
+    </qresource>
+    <qresource prefix="/Units">
+        <file>arachnids.jpg</file>
+        <file>bat.jpg</file>
+        <file>blackblow.jpg</file>
+        <file>bug.jpg</file>
+        <file>cave_worm.jpg</file>
+        <file>cerrador.jpg</file>
+        <file>chief_of_cave_beasts.jpg</file>
+        <file>contemplator.jpg</file>
+        <file>creature_from_the_depth.jpg</file>
+        <file>crystal_golem.jpg</file>
+        <file>ehra.jpg</file>
+        <file>fighting_gnome.jpg</file>
+        <file>frogmy.jpg</file>
+        <file>goblin_bowman.jpg</file>
+        <file>goblin_outlaw.jpg</file>
+        <file>goblin_spy.jpg</file>
+        <file>harpy.jpg</file>
+        <file>manticore.jpg</file>
+        <file>minotaur.jpg</file>
+        <file>mutant_bug.jpg</file>
+        <file>pangolin_outlaw.jpg</file>
+        <file>rusty_dragon.jpg</file>
+        <file>sludge.jpg</file>
+        <file>spirit_of_darkness.jpg</file>
+        <file>stranger.jpg</file>
+        <file>warrior.jpg</file>
+        <file>wild_goblin.jpg</file>
+    </qresource>
+</RCC>

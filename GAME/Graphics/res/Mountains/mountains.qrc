@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/Units">
+        <file>air_elemental.jpg</file>
+        <file>ancient_raven.jpg</file>
+        <file>black_dragon.jpg</file>
+        <file>black_unicorn.jpg</file>
+        <file>bloodthursty_fury.jpg</file>
+        <file>cyclop_outlaw.jpg</file>
+        <file>fury.jpg</file>
+        <file>gargoyle.jpg</file>
+        <file>gold_dragon.jpg</file>
+        <file>griffin.jpg</file>
+        <file>hermit.jpg</file>
+        <file>montesaur.jpg</file>
+        <file>mountain_gargoyle.jpg</file>
+        <file>mountain_jumper.jpg</file>
+        <file>pangolin_horseman.jpg</file>
+        <file>pangolin_shaman.jpg</file>
+        <file>pangolin_warrior.jpg</file>
+        <file>pangolin_wizard.jpg</file>
+        <file>pangolin-bowman.jpg</file>
+        <file>royal_zigred.jpg</file>
+        <file>spirit_of_thunder.jpg</file>
+        <file>stone_golem.jpg</file>
+        <file>volcanic_serpent.jpg</file>
+        <file>wyvern.jpg</file>
+        <file>zigred.jpg</file>
+    </qresource>
+    <qresource prefix="/Buildings">
+        <file>cloudless_temple.jpg</file>
+        <file>prayer_house.jpg</file>
+        <file>quary.jpg</file>
+        <file>rock_tower.jpg</file>
+        <file>sage_manor.jpg</file>
+        <file>secret_monastery.jpg</file>
+        <file>statue_of_the_keeper_of_the_mountains.jpg</file>
+        <file>ziggurat.jpg</file>
+    </qresource>
+</RCC>

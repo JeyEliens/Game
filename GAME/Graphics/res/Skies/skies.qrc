@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/Buildings">
+        <file>angels_town.jpg</file>
+        <file>cathedral_of_saints.jpg</file>
+        <file>heaven_ladder.jpg</file>
+        <file>heavenly_altar.jpg</file>
+        <file>heavenly_palace.jpg</file>
+        <file>portal_of_light.png</file>
+        <file>statue_of_an_angel.jpg</file>
+        <file>tower_of_prayers.jpg</file>
+    </qresource>
+    <qresource prefix="/Units">
+        <file>angel_warrior.jpg</file>
+        <file>archer_pupil.jpg</file>
+        <file>berserker-fanatic.jpg</file>
+        <file>commander.jpg</file>
+        <file>conductor_of_the_souls.jpg</file>
+        <file>elite_warrior.jpg</file>
+        <file>enclave.jpg</file>
+        <file>executioner.jpg</file>
+        <file>gladiator.jpg</file>
+        <file>guardian_of_purgatory.jpg</file>
+        <file>heavenly_knight.jpg</file>
+        <file>heavenly_warrior.jpg</file>
+        <file>light_elemental.jpg</file>
+        <file>lunar_serpent.jpg</file>
+        <file>lunar_swordsman.jpg</file>
+        <file>shaman.jpg</file>
+        <file>spirit_of_light.jpg</file>
+        <file>thunder_warrior.jpg</file>
+        <file>titan.jpg</file>
+        <file>vanamingo.jpg</file>
+    </qresource>
+</RCC>

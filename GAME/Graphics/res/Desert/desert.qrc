@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/Buildings">
+        <file>ancient_tomb.jpg</file>
+        <file>desert_temple.jpg</file>
+        <file>great_pyramid.jpg</file>
+        <file>mausoleum.jpg</file>
+        <file>oasis_temple.jpg</file>
+        <file>shelter.jpg</file>
+        <file>statues_of_the_keepers_of_the_desert.jpg</file>
+        <file>watchtower.jpg</file>
+    </qresource>
+    <qresource prefix="/Units">
+        <file>basilisk.jpg</file>
+        <file>clay_golem.jpg</file>
+        <file>Cyclop.jpg</file>
+        <file>desert_fiend.jpg</file>
+        <file>desert_predator.jpg</file>
+        <file>Djinn.jpg</file>
+        <file>emerald_ant.jpg</file>
+        <file>gecko.jpg</file>
+        <file>ghirbih.jpg</file>
+        <file>giant_scorpio.jpg</file>
+        <file>gold_golem.jpg</file>
+        <file>green_dragon.jpg</file>
+        <file>king_of_the_scorpions.jpg</file>
+        <file>mardarg.jpg</file>
+        <file>mercenary.jpg</file>
+        <file>minotaur_hermit.jpg</file>
+        <file>mombus.jpg</file>
+        <file>sand_slope.jpg</file>
+        <file>sand_zigred.jpg</file>
+        <file>serpentine_king.jpg</file>
+        <file>stone_animal.jpg</file>
+        <file>terra_elemental.jpg</file>
+        <file>the_chief_of_the_minotaurs.jpg</file>
+        <file>wanderer.jpg</file>
+        <file>zorb.jpg</file>
+    </qresource>
+</RCC>

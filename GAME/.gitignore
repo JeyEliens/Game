@@ -15,6 +15,7 @@
 *.sdf
 *.stl
 *.aps
+*.o
 build/*
 
 # Build results

@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/Buildings">
+        <file>elfs_hut.jpg</file>
+        <file>forest_hall.jpg</file>
+        <file>forest_settlement.jpg</file>
+        <file>jungle_temple.jpg</file>
+        <file>lost_pyramid.jpg</file>
+        <file>sanctuary_of_the_forest.jpg</file>
+        <file>snail_house.jpg</file>
+        <file>swamp_statue.jpg</file>
+    </qresource>
+    <qresource prefix="/Units">
+        <file>boegolf.jpg</file>
+        <file>centaur.jpg</file>
+        <file>creeper.jpg</file>
+        <file>creeper_wizard.jpg</file>
+        <file>ent.jpg</file>
+        <file>forest_bowman.jpg</file>
+        <file>forest_killer.jpg</file>
+        <file>forest_scarab.jpg</file>
+        <file>forest_spirit.jpg</file>
+        <file>gnoll.jpg</file>
+        <file>griezly_bear.jpg</file>
+        <file>hillman.jpg</file>
+        <file>hippogrif.jpg</file>
+        <file>hurhul.jpg</file>
+        <file>jah.jpg</file>
+        <file>larch.jpg</file>
+        <file>mad_dog.jpg</file>
+        <file>nimun.jpg</file>
+        <file>noomancooke.jpg</file>
+        <file>nosochep.jpg</file>
+        <file>saber_toothed_tiger.jpg</file>
+        <file>snarglow.jpg</file>
+        <file>swamp_pangolin.jpg</file>
+        <file>unicorn.jpg</file>
+        <file>werewolf.jpg</file>
+        <file>wolf.jpg</file>
+    </qresource>
+</RCC>

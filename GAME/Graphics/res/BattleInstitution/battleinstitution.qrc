@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/Units">
+        <file>berserk.jpg</file>
+        <file>bowman.jpg</file>
+        <file>dragon-bearer.jpg</file>
+        <file>cavalryman.jpg</file>
+        <file>champion.jpg</file>
+        <file>conqueror_of_the_East.jpg</file>
+        <file>crazy_knight.jpg</file>
+        <file>crossbowman.jpg</file>
+        <file>guard.jpg</file>
+        <file>guardsman.jpg</file>
+        <file>horseman.jpg</file>
+        <file>kings_fighter.jpg</file>
+        <file>knight.jpg</file>
+        <file>legionary.jpg</file>
+        <file>liquidator.jpg</file>
+        <file>militiaman.jpg</file>
+        <file>old_russian_knight.jpg</file>
+        <file>peasant.jpg</file>
+        <file>recruit.jpg</file>
+        <file>siege_soldier.jpg</file>
+        <file>spy.jpg</file>
+        <file>swordsman.jpg</file>
+    </qresource>
+    <qresource prefix="/Buildings">
+        <file>battle_arena.jpg</file>
+        <file>battle_watchtower.jpg</file>
+        <file>castle.jpg</file>
+        <file>citadel.jpg</file>
+        <file>farm.jpg</file>
+        <file>forge.jpg</file>
+        <file>tavern.jpg</file>
+        <file>water_mill.jpg</file>
+    </qresource>
+</RCC>

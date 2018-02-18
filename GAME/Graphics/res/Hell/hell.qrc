@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/Buildings">
+        <file>altar_of_the_underworld.jpg</file>
+        <file>devils_palace.jpg</file>
+        <file>hellish_forge.jpg</file>
+        <file>lava_mine.jpg</file>
+        <file>resident_evil.jpg</file>
+        <file>temple_of_the_prophets.jpg</file>
+        <file>tower_of_demons.jpg</file>
+        <file>volcanic_temple.jpg</file>
+    </qresource>
+    <qresource prefix="/Units">
+        <file>apostle_of_the_evil.jpg</file>
+        <file>cerberus.jpg</file>
+        <file>demon.jpg</file>
+        <file>ephritis.jpg</file>
+        <file>evil_brain.jpg</file>
+        <file>fire_elemental.jpg</file>
+        <file>fire_spirit.jpg</file>
+        <file>hell_dragon.jpg</file>
+        <file>hell_hound.jpg</file>
+        <file>horseman_of_the_apocalypse.jpg</file>
+        <file>kruger.jpg</file>
+        <file>lava_monster.jpg</file>
+        <file>lava_soldier.jpg</file>
+        <file>lord_of_evil.jpg</file>
+        <file>lord_of_fire.jpg</file>
+        <file>limb_of_the_devil.jpg</file>
+        <file>ork.jpg</file>
+        <file>ork_leader.jpg</file>
+        <file>red_dragon.jpg</file>
+        <file>wizard.jpg</file>
+        <file>gog.jpg</file>
+        <file>keeper_of_souls.jpg</file>
+        <file>supreme_demon.jpg</file>
+        <file>young_daemon.jpg</file>
+        <file>cast_out_shadow.jpg</file>
+        <file>warrior_of_hell.jpg</file>
+    </qresource>
+</RCC>

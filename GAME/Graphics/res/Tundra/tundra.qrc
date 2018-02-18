@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/Buildings">
+        <file>academy_of_the_north.jpg</file>
+        <file>cold_hardness.jpg</file>
+        <file>guard_tower.jpg</file>
+        <file>ice_palace.jpg</file>
+        <file>ice_temple.jpg</file>
+        <file>iceberg_shelter.jpg</file>
+        <file>magic_cliffs.jpg</file>
+        <file>snow_temple.jpg</file>
+    </qresource>
+    <qresource prefix="/Units">
+        <file>anthus.jpg</file>
+        <file>arctic_djinn.jpg</file>
+        <file>beetle-hellebore.jpg</file>
+        <file>big_runaway.jpg</file>
+        <file>boatman.jpg</file>
+        <file>cold_caster.jpg</file>
+        <file>coldness_daemon.jpg</file>
+        <file>dragowizard.jpg</file>
+        <file>garlakan.jpg</file>
+        <file>guard_of_the_north.jpg</file>
+        <file>hunter.jpg</file>
+        <file>ice_golem.jpg</file>
+        <file>ice_predator.jpg</file>
+        <file>mammoth.jpg</file>
+        <file>northern_beast.jpg</file>
+        <file>polar_bear.jpg</file>
+        <file>polar_dragon.jpg</file>
+        <file>polar_goat.jpg</file>
+        <file>polar_tiger.jpg</file>
+        <file>tundra_warrior.jpg</file>
+        <file>yeti.jpg</file>
+        <file>yeti_shaman.jpg</file>
+    </qresource>
+</RCC>
